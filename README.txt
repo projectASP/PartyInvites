@@ -30,8 +30,8 @@ He still wants us to make it though
   using System.Data.Entity;
   namespace PartyInvitesSheilferZepeda.DAL{
         public class InviteContext:DbContext{  //YourContext class inherits from ASP.NET DbContext
-          public DbSet<Name> Names { get; set; }
-          public DbSet<Phone> Phones { get; set; }
+          public DbSet<GuestResponse> GuestResponses { get; set; }
+
         }
   }
   
