@@ -11,7 +11,7 @@ He still wants us to make it though
                                                          #Creating a context file for database
                                                          
 >Create a DAL Folder in the directory
->Create a NAME_OF_CONTEXT_FILE.csto file in DAL
+>Create a NAME_OF_CONTEXT_FILE.cs file in DAL
 
 ~Generic Example
   ~
