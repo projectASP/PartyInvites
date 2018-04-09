@@ -66,7 +66,9 @@ He still wants us to make it though
          https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx
 
 Install the Entity Framework from the NuGet Package Manager
+Project -> Manage NuGet Packages
 
+>Tools -> NuGet Package Manager -> console
 >Type this into Package Manager Console 
 
   enable-migrations
