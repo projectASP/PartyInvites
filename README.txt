@@ -4,8 +4,9 @@ An ASP.NET class project
 
 
 # Notes & Reference
+~USING a database isn't required in the assignment, you can use a defaultConnection <connectionstring> and no DAL folder since we're passing data by strongly-typed views.
 
-
+He still wants us to make it though
 
                                                          #Creating a context file for database
                                                          
@@ -34,12 +35,14 @@ An ASP.NET class project
         }
   }
   
-                                                         #Creating Connection String for database context
+
+
+                                            #Creating Connection String for database context
                                                         
 ~Generic Example 
   ~ 
   <connectionStrings
-    <add name="NAME_OF_CONTEXT_FILE"
+    <add name="defaultConnection"
      connectionString = "DataSource = (LocalDB)\MSSQLLocalDB;
      AttachDbFilename=|DataDirectory|\NAME_OF_MVC_APP.mdf;
      Initial Catalog=NAME_OF_MVC_APP;
@@ -58,7 +61,24 @@ An ASP.NET class project
 
 
 
-                                                      #Adding migration updates to database
+         
+         #Adding migration updates to database
+         https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx
+
+Install the Entity Framework from the NuGet Package Manager
+
+>Type this into Package Manager Console 
+
+  enable-migrations
+  add-migration initialcreate
+  
+  >create a new file
+  
+  add-migration AddNewFile
+  Update-Database
+  
+  
+
                                                       
                                                       
                                                       
