@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @ViewBag.Greeting
+        <br />
+        <img src="https://res.cloudinary.com/eduprojectsil/image/upload/v1523248574/party_time_pdby1e.jpg" />
+        <p>It's time to party.</p>
+
+        @Html.ActionLink("RSVP here", "RsvpForm")
+
+    </div>
+</body>
+</html>
